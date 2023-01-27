@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+body {
+  margin: 1rem;
+  padding: 0;
+  color: #e0e1dd;
+  font-family: "DM Sans", sans-serif;
+  background-color: #0d1b2a;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 20px;
+}
+
+.block {
+  height: 100%;
+  width: 100%;
+  background-color: #1b263b;
+  border-radius: 1rem;
+}
+
+.shopping-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  padding: 1rem;
+  text-align: center;
+}
+
+.item img {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.item h2 {
+  margin: 0;
+}
+
+.cart {
+  padding-left: 1rem;
+
+}
+
+.cart h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.cart li {
+  font-size: 30px;
+}
+
+.sum-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
