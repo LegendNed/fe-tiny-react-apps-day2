@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url('https://fonts.cdnfonts.com/css/calculator');
 
 body {
   margin: 1rem;
@@ -8,55 +9,53 @@ body {
   background-color: #0d1b2a;
 }
 
-.divider {
-  display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  gap: 20px;
+.App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.block {
-  height: 100%;
-  width: 100%;
-  background-color: #1b263b;
+.App h1 {
+  text-align: center;
+}
+
+.calculator {
+  background-color: #1B263B;
+  height: 30rem;
+  width: 20rem;
   border-radius: 1rem;
+  padding: 0.75rem;
 }
 
-.shopping-list {
+.calculator input {
+  width: 99%;
+  height: 3.5rem;
+  text-align: right;
+  font-size: 50px;
+  background-color: #778DA9;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: 'Calculator', sans-serif;
+}
+
+.buttons {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
 }
 
-.item {
-  padding: 1rem;
-  text-align: center;
+.buttons button {
+  font-size: 1.5rem;
+  height: 4.6rem;
+  width: 4.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #778DA9;
 }
 
-.item img {
-  width: 80%;
-  border-radius: 1rem;
-}
-
-.item h2 {
-  margin: 0;
-}
-
-.cart {
-  padding-left: 1rem;
-
-}
-
-.cart h2 {
-  text-align: center;
-  font-size: 40px;
-}
-
-.cart li {
-  font-size: 30px;
-}
-
-.sum-total {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 90%;
+.buttons button:active {
+  background-color: #415A77;
 }
